@@ -18,3 +18,4 @@ jslint.xml
 *.suo
 *.user
 .DS_Store
+.idea
