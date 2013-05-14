@@ -1,5 +1,5 @@
 bin
-js
+js/*
 obj
 tmp
 docs
@@ -19,3 +19,4 @@ jslint.xml
 *.user
 .DS_Store
 .idea
+!js/plupload.flash.swf
