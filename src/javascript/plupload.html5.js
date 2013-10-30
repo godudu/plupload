@@ -82,8 +82,8 @@ define(['libs/plupload'], function (plupload) {
                     chunks: sliceSupport,
                     // Safari on Windows has problems when selecting multiple files
                     multi_selection: !(plupload.ua.safari && plupload.ua.windows),
-                    // WebKit and Gecko 2+ can trigger file dialog progrmmatically
-                    triggerDialog: (plupload.ua.gecko && window.FormData || plupload.ua.webkit)
+                    // WebKit, Gecko 2+ and IE10 can trigger file dialog programmatically
+                    triggerDialog: plupload.ua.webkit || (window.FormData && (plupload.ua.gecko || plupload.ua.ie))
                 };
             },
 
